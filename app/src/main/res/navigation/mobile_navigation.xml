@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.maxli.pokedex.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_types"
+        android:name="com.maxli.pokedex.ui.types.TypesFragment"
+        android:label="@string/title_types"
+        tools:layout="@layout/fragment_types" >
+        <action
+            android:id="@+id/action_navigation_types_to_navigation_type_details"
+            app:destination="@id/navigation_type_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.maxli.pokedex.ui.favourites.FavouritesFragment"
+        android:label="@string/title_favourites"
+        tools:layout="@layout/fragment_favourites" >
+        <action
+            android:id="@+id/action_navigation_favourites_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_details"
+        android:name="com.maxli.pokedex.ui.details.DetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_navigation_details_to_navigation_type_details"
+            app:destination="@id/navigation_type_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_type_details"
+        android:name="com.maxli.pokedex.ui.typedetails.TypeDetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_type_details">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_navigation_type_details_to_navigation_details"
+            app:destination="@id/navigation_details" />
+    </fragment>
+</navigation>

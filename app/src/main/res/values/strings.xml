@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+    <string name="title_home">Home</string>
+    <string name="title_types">Types</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="title_details">Details</string>
+    <string name="image_pokemon">Image of Pokemon</string>
+    <string name="types">Type(s): %1$s</string>
+    <string name="exp">Exp: %1$d</string>
+    <string name="height">Height: %1$d</string>
+    <string name="weight">Weight: %1$d</string>
+    <string name="abilities">Abilities: %1$s</string>
+    <string name="moves">Moves: %1$s</string>
+    <string name="base_stats">Base stats</string>
+    <string name="stat">%1$s: %2$d, effort: %3$d</string>
+    <string name="effective">Effective against: %1$s</string>
+    <string name="ineffective">Ineffective against: %1$s</string>
+    <string name="no_damage_from">No Damage From: %1$s</string>
+    <string name="no_damage_to">No Damage To: %1$s</string>
+    <string name="type_move_list">List of moves: %1$s</string>
+    <string name="type_pokemon_list">List of pokemon: %1$s</string>
+    <string name="favourite_description">Favourite</string>
+    <string name="no_favourites">Currently No Favourites</string>
+</resources>
